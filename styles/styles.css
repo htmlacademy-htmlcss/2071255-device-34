@@ -103,21 +103,29 @@ body a {
 } 
 
 .input{
-    display: flex;
     align-items: center;
-    outline: auto;
     justify-content: space-between;
+}
+.navigation-input{
+    display: flex;
 
 }
+
+
 .input input{
     width: 359px;
+    color: black;
     background-color: var(--yellow-light);
-    border: none;
+    border: 2px solid black;
     font-size: 16px;
     line-height: 20px;
-    color: #000;
-
+    border-radius: 50px 0px 0px 50px;
+    padding: 0;
+    padding-left: 48px;
+    box-sizing: border-box;
 }
+
+
 .input button {
     font-family: "Rubik", sans-serif;;
     font-size: 16px;
@@ -125,28 +133,39 @@ body a {
     color: #000;
     width: 160px;
     height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--yellow-light);
+    border-radius: 0px 50px 50px 0px;
     border: 2px solid black;
+    border-left: none;
 }
+
+
 .input-user-container{
     display: flex;
     width: 231px;
     padding: 5px 0;
-}
-.navigation-container{
-    display: flex;
-    width: 240px;
-    padding: 5px 0;
-    justify-content: space-between;
-    outline: auto;
 }
 .input-user{
     display: flex;
     height: 30px;
     align-items: center;
 }
-
+.navigation-icon{
+    margin: auto 12px auto 0px;
+}
+.navigation-container{
+    display: flex;
+    width: 240px;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}
 .navigation-user{
+    display: flex;
     height: 30px;
+
 }
 .catalog-menu-container{
     font-family: "Raleway", sans-serif;
@@ -160,6 +179,20 @@ body a {
     margin: 0;
     padding-top: 15px;
     padding-bottom: 14px;
+}
+.catalog-menu{
+    width: 293px;
+}
+.catalog-menu-link{
+    position: relative;
+}
+.catalog-icon{
+    position: absolute;
+    left: 10px;
+    top: -16px;
+
+
+
 }
 .navigation-list-shop{
     width: 471px;
@@ -329,21 +362,28 @@ body a {
 /*Раздел специальная доставка*/
 .special-delivery{
     display: grid;
+
     margin-bottom: 70px;
     grid-template-columns: 125px 1fr;
     grid-template-rows: 100px;
+
+
 }
 .special-delivery-link{
     display: block;
     background-color: var(--yellow-light);
-    justify-content: center;
+    text-align: center;
+    padding: auto;
 
 }
 .special-delivery-text{
     background-color: #f0f0f0;
     margin: 0; 
     font-size: 40px;
+    text-align: center;
+    line-height: 100px;
 }
+
 
 /*Раздел о нас и контакты*/
 .information-container{
@@ -406,15 +446,11 @@ body a {
     margin: 64px 252px 144px 147px;
 }
 .mailing-list-discription{
-    margin: 0;
-    margin-top: 74px;
-    margin-right: 133px;
+    margin: 74px 133px 0px 0px;
 
 }
 .mail-form{
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-bottom: 56px;
+    padding: 0px 140px 56px 140px;
     display: grid;
     grid-template-columns: 556px 253px 1fr;
     grid-template-rows: 57px;
@@ -487,9 +523,7 @@ body a {
     color: #ffffff;
 }
 .copyright{
-    margin-right: 0;
-    margin-top: 140px;
-    margin-bottom: 65px;
+    margin: 140px 0 65px 0;
 
 }
 .copyright-telephone {
