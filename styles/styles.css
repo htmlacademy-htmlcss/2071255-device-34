@@ -122,12 +122,13 @@ body a {
 } 
 
 .input{
+    
     align-items: center;
     justify-content: space-between;
 }
 .navigation-input{
     display: flex;
-
+    position: relative;
 }
 
 
@@ -142,7 +143,12 @@ body a {
     padding: 0;
     padding-left: 48px;
     box-sizing: border-box;
+    background-image: url("../image/icons/search.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center left 16px;
 }
+
 
 
 .input button {
@@ -159,7 +165,13 @@ body a {
     border: 2px solid black;
     border-left: none;
 }
-
+.input button:hover{
+    color: #ffffff;
+    background-color: #000;
+}
+.input button:active{
+    color: rgba(255,255, 255, 0.3);
+}
 
 .input-user-container{
     display: flex;
@@ -233,8 +245,35 @@ body a {
     margin-bottom: 70px;
 }
 .main-slider-image{
+    position: relative;
     margin-top: -150px;
 
+}
+.flipping-button-prev{
+    position: absolute;
+    background: none;
+    border: none;
+    left: 30px;
+    top: 211px;
+}
+.flipping-button-prev:hover{
+    opacity: 0.6;
+}
+.flipping-button-prev:active{
+    opacity: 0.3;
+}
+.flipping-button-next{
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0px;
+    top: 211px;
+}
+.flipping-button-next:hover{
+    opacity: 0.6;
+}
+.flipping-button-next:active{
+    opacity: 0.3;
 }
 .slider-content-container{
     margin-top: -29px;
