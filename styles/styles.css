@@ -828,6 +828,9 @@ body a {
     background-position: center;
     background-size: auto;
 }
+.footer-social-link:hover{
+    background-color: #ffc700;
+}
 .footer-social-tg{
     background-image: url("../image/icons/telegramm.svg");
 }
