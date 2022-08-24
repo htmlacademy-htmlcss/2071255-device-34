@@ -530,8 +530,6 @@ body a {
 .special-delivery{
     margin-bottom: 70px;
 
-
-
 }
 .special-delivery-link{
     display: grid;
@@ -543,8 +541,8 @@ body a {
 }
 .special-delivery-image{
     grid-column: 1/2;
-    padding: auto;
-    align-items: center;
+    padding: 35px 39px;
+
 }
 .special-delivery-text{
     grid-column: 2/3;
@@ -740,13 +738,19 @@ body a {
     justify-self: right;
 }
 .mail-text{
-    border-color: none;
-    border-bottom:3px solid #c4c4c4;
+    padding: 0;
+    padding-left: 16px;
+    padding-bottom: 11px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #c4c4c4;
 }
 .mailing-list-button{
     font-family: "Raleway", sans-serif;
     line-height: 21px;
     font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     background-color: none;
     border: none;
     border: 3px solid #c4c4c4;
@@ -781,6 +785,7 @@ body a {
 }
 .footer-services{
     justify-content: space-between;
+    margin-bottom: 62px;
 
 }
 .footer-services-list{
@@ -790,9 +795,7 @@ body a {
     justify-content: space-between;
     list-style-type: none;
 }
-.footer-social{
-    display: flex;
-}
+
 
 .footer-services-link {
     font-family: "Raleway", sans-serif;
@@ -800,6 +803,39 @@ body a {
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
+}
+.footer-social-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.footer-social-item{
+    margin-right: 15px;
+}
+.footer-social-item:last-child{
+    margin-right: 0;
+}
+.footer-social-link{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.footer-social-tg{
+    background-image: url("../image/icons/telegramm.svg");
+}
+.footer-social-twitter{
+    background-image: url("../image/icons/twitter.svg");
+}
+.footer-social-youtube{
+    background-image: url("../image/icons/youtube.svg");
 }
 .copyright{
     margin: 140px 0 65px 0;
